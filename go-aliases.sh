@@ -14,7 +14,6 @@ alias gobur="go build -v -o main; ./main"
 #-----------------------------------------------------------
 
 
-
 #------------------------- TESTING ------------------------
 # Native Golang testing resource
 alias gotest"=go test -v -cover -bench . ./..." 

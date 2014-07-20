@@ -175,7 +175,7 @@ alias gitad="git ls-files --deleted | xargs git add"
 # to be used when commiting the superfulous first upload 
 gifu(){
     git add .
-    git commit -m ":rocket First upload"
+    git commit -m ":rocket: First upload"
 }
 
 # to be used when updating the .gitignore
