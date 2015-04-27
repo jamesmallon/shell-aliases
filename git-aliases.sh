@@ -200,3 +200,11 @@ giuprd() {
     fi
 }
 
+# rollback to specific commit
+giroll() {
+    if [ $# -ne 2 ]
+    then
+        echo "Expecting [commit-id] [branch]"
+    git reset --hard $1
+    git push -f origin $2
+}
