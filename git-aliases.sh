@@ -205,6 +205,8 @@ giroll() {
     if [ $# -ne 2 ]
     then
         echo "Expecting [commit-id] [branch]"
-    git reset --hard $1
-    git push -f origin $2
+    else
+        git reset --hard $1
+        git push -f origin $2
+    fi
 }
