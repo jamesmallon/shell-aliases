@@ -213,3 +213,15 @@ giroll() {
         git push -f origin $2
     fi
 }
+
+# submodules
+
+# cloning main repository and submodules recursivelly
+gicrs() {
+    if [ $# -eq 0 ]; then
+        echo "Expecting the repository url"
+    else
+        git clone --recursive $1
+    fi
+}
+
