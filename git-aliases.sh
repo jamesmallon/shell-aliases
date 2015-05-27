@@ -234,3 +234,5 @@ giasm() {
     fi
 }
 
+# updating submodules
+alias giupsm="git submodule update --remote --merge"
