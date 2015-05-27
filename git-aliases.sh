@@ -23,6 +23,9 @@ alias giff="git diff"
 # alias to git merge
 alias gime="git merge"
 
+# alias to get remote repository (even without connection)
+alias giret="git config --get remote.origin.url"
+
 # alias to checkout on a branch
 giche() {
 	if [ $# -eq 0 ]
