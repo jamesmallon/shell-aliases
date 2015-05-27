@@ -225,3 +225,12 @@ gicrs() {
     fi
 }
 
+# adding submodules
+giasm() {
+    if [ $# -eq 0 ]; then
+        echo "Expecting the submodule url and the folder"
+    else
+        git submodule add $1 $2
+    fi
+}
+
