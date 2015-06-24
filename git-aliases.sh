@@ -26,6 +26,9 @@ alias gime="git merge"
 # alias to get remote repository (even without connection)
 alias giret="git config --get remote.origin.url"
 
+# interactive rebasing
+alias gitre="git rebase -i HEAD~"
+
 # alias to checkout on a branch
 giche() {
 	if [ $# -eq 0 ]
@@ -236,3 +239,4 @@ giasm() {
 
 # updating submodules
 alias giupsm="git submodule update --remote --merge"
+
