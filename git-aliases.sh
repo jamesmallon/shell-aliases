@@ -3,6 +3,8 @@
 # Author: James Mallon <jamesmallondev@gmail.com
 # Created: 2013-04-28
 
+export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
+
 # ---------------- GIT -------------------
 
 # alias to show git status
@@ -76,18 +78,6 @@ alias gire="git reset --hard HEAD"
 
 # Function used to clean local reposiory from untracked files
 alias gicle="git clean -f"
-
-# function to init, add origin and fetch in one command
- gitin() {
-	if [ $# -eq 0 ]
-		then
-		echo "We're expecting the remote url"
-	else
-		git init
-		git remote add origin "$1"
-		git fetch
-	fi
-}
 
 # function to init, add origin and fetch in one command
 gitg() {
@@ -239,4 +229,6 @@ giasm() {
 
 # updating submodules
 alias giupsm="git submodule update --remote --merge"
+# initializing all submodules
+alias giuir="git submodule update --init --recursive"
 
