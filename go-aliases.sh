@@ -2,6 +2,12 @@
 
 # Author: Thiago Mallon <thiagomallon@gmail.com
 
+go_up_install() {
+    if [ -f /home/$USER/shell-aliases/go-upstall.py ]; then
+        /home/$USER/shell-aliases/go-upstall.py
+    fi
+}
+
 # dirs
 alias cgo="cd ~/go/src"
 
